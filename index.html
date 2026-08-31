@@ -15,16 +15,16 @@ const SUPABASE_PUBLISHABLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ
 const supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 const flavors=["Clásica","Lotus","Oreo","Kinder Bueno","Pistacho","Galletas Dinosaurios","Snickers","Nutella","Happy Hippo","Tiramisú","Torrija"];
 const imgs={"Clásica":"clasica.jpg",
-"Lotus":"lotus.jpg",
+"Lotus":"lotus.png",
 "Oreo":"oreo.jpg",
-"Kinder Bueno":"kinder.jpg",
-"Pistacho":"pistacho.jpg",
-"Galletas Dinosaurios":"dinosaurios.jpg",
+"Kinder Bueno":"kinder bueno.jpg",
+"Pistacho":"tarta de queso y pistacho-1.jpg",
+"Galletas Dinosaurios":"galleta dinosaurios.jpg",
 "Snickers":"snickers.jpg",
 "Nutella":"nutella.jpg",
 "Hipopótamo feliz":happyhippo.jpg",
 "Tiramisú":"tiramisu.jpg",
-"Torrija":"torrija.jpg"};
+"Torrija":"torrija caramelizada.jpg"};
 let state={page:'home',user:null,orders:[],selectedFlavor:null,editing:null,tartas:[]};
 const today=new Date().toISOString().slice(0,10), tomorrow=new Date(Date.now()+86400000).toISOString().slice(0,10);
 const fmt=d=>new Date(d+'T12:00:00').toLocaleDateString('es-ES',{day:'numeric',month:'long',year:'numeric'});
