@@ -48,19 +48,19 @@ body{margin:0;background:#f8f5ef;color:#201d19;font-family:-apple-system,BlinkMa
 </div>
 
 <script>
-const sabores=[
+const flavors=[
 "Clásica","Lotus","Oreo","Kinder Bueno","Pistacho",
 "Galletas Dinosaurios","Snickers","Nutella","Happy Hippo",
 "Tiramisú","Torrija"
 ];
 
-const usuarios=["Oscar","Rubén","Anay"];
+const users=["Oscar","Rubén","Anay"];
 
-sea ​​estado={
-página:"inicio",
-usuario:localStorage.cbUser||"Oscar",
-pedidos:JSON.parse(localStorage.cbOrders||"[]"),
-Sabor seleccionado: nulo
+let ​​state={
+page:"home",
+user:localStorage.cbUser||"Oscar",
+orders:JSON.parse(localStorage.cbOrders||"[]"),
+selectedFlavor: null
 };
 
 función guardar(){
