@@ -48,7 +48,7 @@ render();boot();
 
 const users=["Oscar","Rubén","Ana"];
 
-let state={page:'home',user:localStorage.cbUser||'Oscar',orders:JSON.parse(localStorage.cbOrders||'[]'),selectedFlavor:null,editing:null};
+
 const save=()=>{localStorage.cbOrders=JSON.stringify(state.orders);localStorage.cbUser=state.user};
 const fmt=d=>new Date(d+'T12:00:00').toLocaleDateString('es-ES',{day:'numeric',month:'long',year:'numeric'});
 const iso=d=>new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,10);
